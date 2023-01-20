@@ -125,4 +125,13 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    /**
+     * Display username.
+     * 
+     * @return string
+     */
+    public function actiongetUsername($email) {
+        return $email;
+    }
 }
